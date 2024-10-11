@@ -129,7 +129,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-/data/csv/*
-/data/json/*
-/data/games/*
-/data/*/!.gitkeep
+
