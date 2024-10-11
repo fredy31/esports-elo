@@ -130,4 +130,6 @@ dist
 .pnp.*
 
 /data/csv/*
-/data/csv/!.gitkeep
+/data/json/*
+/data/games/*
+/data/*/!.gitkeep

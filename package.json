@@ -4,7 +4,9 @@
   "description": "Get data from: https://drive.google.com/drive/u/1/folders/1gLSw0RLjBbtaNy0dgnGQDAZOHIgCe-HH",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convert_csv_to_json": "node _scripts/convert_csv_to_json.js",
+    "convert_json_to_games": "node _scripts/convert_json_to_games.js"
   },
   "author": "",
   "license": "ISC"
