@@ -136,3 +136,5 @@ dist
 /data/json/!.gitkeep
 /data/games*
 /data/games/!.gitkeep
+/data/elo_raw/rvb*
+/data/elo_raw/rvb/!.gitkeep
