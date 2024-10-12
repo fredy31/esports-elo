@@ -73,17 +73,17 @@ function elo_players(){
                 let game = fs.readFileSync(directory+file);
                 game = JSON.parse(game);
                 if(game.Winner == 'Blue'){
-                    calcElo_player(game.Blue.top.playername,game.Red.top.playername,game.Date);
-                    calcElo_player(game.Blue.jng.playername,game.Red.jng.playername,game.Date);
-                    calcElo_player(game.Blue.mid.playername,game.Red.mid.playername,game.Date);
-                    calcElo_player(game.Blue.bot.playername,game.Red.bot.playername,game.Date);
-                    calcElo_player(game.Blue.sup.playername,game.Red.sup.playername,game.Date);
+                    calcElo_player(game.Blue.top.playername,game.Blue.team,game.Red.top.playername,game.Red.team,game.Date);
+                    calcElo_player(game.Blue.jng.playername,game.Blue.team,game.Red.jng.playername,game.Red.team,game.Date);
+                    calcElo_player(game.Blue.mid.playername,game.Blue.team,game.Red.mid.playername,game.Red.team,game.Date);
+                    calcElo_player(game.Blue.bot.playername,game.Blue.team,game.Red.bot.playername,game.Red.team,game.Date);
+                    calcElo_player(game.Blue.sup.playername,game.Blue.team,game.Red.sup.playername,game.Red.team,game.Date);
                 }else{
-                    calcElo_player(game.Red.top.playername,game.Blue.top.playername,game.Date);
-                    calcElo_player(game.Red.jng.playername,game.Blue.jng.playername,game.Date);
-                    calcElo_player(game.Red.mid.playername,game.Blue.mid.playername,game.Date);
-                    calcElo_player(game.Red.bot.playername,game.Blue.bot.playername,game.Date);
-                    calcElo_player(game.Red.sup.playername,game.Blue.sup.playername,game.Date);
+                    calcElo_player(game.Red.top.playername,game.Red.team,game.Blue.top.playername,game.Blue.team,game.Date);
+                    calcElo_player(game.Red.jng.playername,game.Red.team,game.Blue.jng.playername,game.Blue.team,game.Date);
+                    calcElo_player(game.Red.mid.playername,game.Red.team,game.Blue.mid.playername,game.Blue.team,game.Date);
+                    calcElo_player(game.Red.bot.playername,game.Red.team,game.Blue.bot.playername,game.Blue.team,game.Date);
+                    calcElo_player(game.Red.sup.playername,game.Red.team,game.Blue.sup.playername,game.Blue.team,game.Date);
                 }
                 console.log((i/files.length*100).toFixed(3)+'% ('+i+'/'+files.length+') games scanned.');
             }
@@ -91,13 +91,13 @@ function elo_players(){
     })
 }
 
-function calcElo_player(winner,loser,gameTime){
+function calcElo_player(winner,winnerteam,loser,loserteam,gameTime){
     let winnerScore = 1000;
     let winnerArray = [];
     let loserScore = 1000;
     let loserArray = [];
-    winner = synonyms_players.players(winner);
-    loser = synonyms_players.players(loser);
+    winner = synonyms_players.players(winner,winnerteam);
+    loser = synonyms_players.players(loser,loserteam);
     if (fs.existsSync(__dirname+'/../data/elo_raw/players/'+winner+'.json')) {
         let winnerFile = fs.readFileSync(__dirname+'/../data/elo_raw/players/'+winner+'.json')
         winnerArray = JSON.parse(winnerFile);
