@@ -142,3 +142,7 @@ dist
 /data/elo_raw/players/check/!.gitkeep
 /data/elo_raw/teams*
 /data/elo_raw/teams/check/!.gitkeep
+/data/elo_raw/regions*
+/data/elo_raw/regions/check/!.gitkeep
+/data/elo_raw/champion*
+/data/elo_raw/champion/!.gitkeep
