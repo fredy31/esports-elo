@@ -2,7 +2,7 @@ const fs = require('node:fs');
 
 convert_csv_to_json();
 function convert_csv_to_json(){
-    let directory = __dirname+'/../data/csv/';
+    let directory = __dirname+'/../../data/csv/';
     fs.readdir(directory, (err, files) => {
         if (err) throw err;
         var file_i = 0;

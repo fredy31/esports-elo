@@ -1,6 +1,6 @@
 const fs = require('node:fs');
-const calcElo = require('./_elo_calc.js')
-const convertJsonToCsv = require('./_convert_json_to_csv.js')
+const calcElo = require('./calculator/_elo_calc.js')
+const convertJsonToCsv = require('./converter/json_to_csv.js')
 
 elo_rvb();
 function elo_rvb(){

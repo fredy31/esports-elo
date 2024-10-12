@@ -138,3 +138,7 @@ dist
 /data/games/!.gitkeep
 /data/elo_raw/rvb*
 /data/elo_raw/rvb/!.gitkeep
+/data/elo_raw/players*
+/data/elo_raw/players/check/!.gitkeep
+/data/elo_raw/teams*
+/data/elo_raw/teams/check/!.gitkeep

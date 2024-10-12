@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 convert_json_to_games();
 function convert_json_to_games(){
-    let directory = __dirname+'/../data/json/';
+    let directory = __dirname+'/../../data/json/';
     fs.readdir(directory, (err, files) => {
         if (err) throw err;
         var file_i = 0;
@@ -21,46 +21,48 @@ function convert_json_to_games(){
                             'Id' : el.gameid,
                             'Date' : el.date,
                             'Blue' : {
+                                'team' : '',
                                 'top' : {
-                                    'playerName' : '',
+                                    'playername' : '',
                                     'champion' : ''
                                 },
                                 'jng' : {
-                                    'playerName' : '',
+                                    'playername' : '',
                                     'champion' : ''
                                 },
                                 'mid' : {
-                                    'playerName' : '',
+                                    'playername' : '',
                                     'champion' : ''
                                 },
                                 'bot' : {
-                                    'playerName' : '',
+                                    'playername' : '',
                                     'champion' : ''
                                 },
                                 'sup' : {
-                                    'playerName' : '',
+                                    'playername' : '',
                                     'champion' : ''
                                 }
                             },
                             'Red' : {
+                                'team' : '',
                                 'top' : {
-                                    'playerName' : '',
+                                    'playername' : '',
                                     'champion' : ''
                                 },
                                 'jng' : {
-                                    'playerName' : '',
+                                    'playername' : '',
                                     'champion' : ''
                                 },
                                 'mid' : {
-                                    'playerName' : '',
+                                    'playername' : '',
                                     'champion' : ''
                                 },
                                 'bot' : {
-                                    'playerName' : '',
+                                    'playername' : '',
                                     'champion' : ''
                                 },
                                 'sup' : {
-                                    'playerName' : '',
+                                    'playername' : '',
                                     'champion' : ''
                                 }
                             },
@@ -68,8 +70,10 @@ function convert_json_to_games(){
                         };
                     }
                     if(el.position!='team'){
-                        gamesOfFile[el.gameid][el.side][el.position]['playerName'] = el.playerName;
+                        gamesOfFile[el.gameid][el.side][el.position]['playername'] = el.playername;
                         gamesOfFile[el.gameid][el.side][el.position]['champion'] = el.champion;
+                    }else{
+                        gamesOfFile[el.gameid][el.side]['team'] = el.teamname;
                     }
                     if(el.position=='team' && el.side=="Blue"){
                         if(el.result==1){
