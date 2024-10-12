@@ -130,19 +130,16 @@ dist
 .pnp.*
 
 
-/data/csv*
-/data/csv/!.gitkeep
-/data/json*
-/data/json/!.gitkeep
-/data/games*
-/data/games/!.gitkeep
-/data/elo_raw/rvb*
-/data/elo_raw/rvb/!.gitkeep
-/data/elo_raw/players*
-/data/elo_raw/players/check/!.gitkeep
-/data/elo_raw/teams*
-/data/elo_raw/teams/check/!.gitkeep
-/data/elo_raw/regions*
-/data/elo_raw/regions/check/!.gitkeep
-/data/elo_raw/champion*
-/data/elo_raw/champion/!.gitkeep
+/data/csv/*
+/data/elo_raw/players/*
+/data/elo_raw/players/check/*
+/data/elo_raw/regions/*
+/data/elo_raw/rvb/*
+/data/elo_raw/teams/*
+/data/elo_raw/teams/check/*
+/data/elo_raw/champion/*
+/data/games/*
+/data/json/*
+!.gitignore
+!.gitkeep
+!*/
