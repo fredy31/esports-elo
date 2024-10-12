@@ -20,6 +20,12 @@ Need to have NodeJS installed.
 
 ## Explanation of scripts
 
+### full_script
+
+Runs everything, from beginning to end.
+
+Start with the CSV in `/data/json` and end with the CSV of the elo progression.
+
 ### convert_csv_to_json
 
 Converts the given csvs to json, easier to work with in programming.
@@ -29,6 +35,10 @@ Also splits them per month, makes the files we are working with smaller.
 ### convert_json_to_games
 
 Goes through the jsons created at the previous setps and splits them by games, keeping only the informations necessary for future work. (Also deals with the fact the CSV has 1 line per player)
+
+### prepwork
+
+Does the first 2 scripts in a row.
 
 ### elo_calc_red_vs_blue
 
