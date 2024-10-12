@@ -9,7 +9,8 @@
     "convert_csv_to_json": "node _scripts/converter/csv_to_json.js",
     "convert_json_to_games": "node _scripts/converter/json_to_games.js",
     "elo_calc_red_vs_blue": "node _scripts/elo_rvb.js",
-    "elo_players_teams": "node _scripts/elo_players_teams.js"
+    "elo_players_teams": "node _scripts/elo_players_teams.js",
+    "create_export_file_players": "node _scripts/create_export_file_players.js"
   },
   "author": "",
   "license": "ISC"

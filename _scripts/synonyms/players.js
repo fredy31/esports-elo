@@ -3,6 +3,7 @@ module.exports = {
     players : function(player,team){
         switch(player){
             case '0ri': 
+            case '0din':
             case '1an': 
             case '1Bicho': 
             case '1Blue': 
@@ -79,7 +80,6 @@ module.exports = {
             case 'A1':
             case 'A02':
             case 'A266':
-            case 'aaron':
             case 'Abagnale':
             case 'Abaddon':
             case 'Abanke':
@@ -101,7 +101,7 @@ module.exports = {
             case 'AcceZ':
             case 'Acciy':
             case 'Accziz':
-            case 'AcceZ':
+            case 'Accez':
             case 'Acefos':
             case 'Acerola':
             case 'Acheng':
@@ -145,6 +145,32 @@ module.exports = {
             case 'AeonBlast':
             case 'Aerados':
             case 'Aesenar':
+            case 'ADD':
+            case 'Aang':
+            case 'Achie':
+            case 'adi1':
+            case 'Admiral Jane':
+            case 'AdrYh':
+            case 'AdyTheKid':
+            case 'Aether':
+            case 'Aetinoth':
+            case 'Affection':
+            case 'Afm':
+            case 'Afriibi':
+            case 'Afroboi':
+            case 'A Bee':
+            case 'aadurrr':
+            case 'Abow':
+            case 'Âfrox':
+            case 'afters':
+            case 'Afting':
+            case 'Ag0nyPain':
+            case 'AGENTAS':
+            case 'Aggress1on':
+            case 'Aggression':
+            case 'Aggro':
+            case 'Agile':
+            case 'Aglaro':
                 // No renames found.
                 return player;
             case '1Jiang':
@@ -191,6 +217,7 @@ module.exports = {
                 }
             case 'Godlike':
             case 'ackerman':
+            case 'Ackerman':
                 return 'Godlike';
             case 'Acorderr':
             case 'Catra':
@@ -221,8 +248,15 @@ module.exports = {
             case 'Aero':
                 return 'Arfoad';
             case 'aesthetic':
+            case 'Aesthetic':
             case 'Swag':
                 return 'aesthetic';
+            case 'aaron':
+            case 'Aaron':
+                return 'Aaron';
+            case 'About':
+            case 'Rhea':
+                return 'About';
             default:
                 fs.writeFileSync(__dirname+'/../../data/elo_raw/players/check/'+player+'.txt',"https://liquipedia.net/leagueoflegends/"+player);
                 return player;
