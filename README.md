@@ -15,7 +15,9 @@ Players are confronted to the ELO of their lane opponent. Same for champions.
 Need to have NodeJS installed.
 
 1- Get data from: https://drive.google.com/drive/u/1/folders/1gLSw0RLjBbtaNy0dgnGQDAZOHIgCe-HH
+
 2- Put files in `/data/json`
+
 3- Run `npm run full_script` and then go make yourself a coffee. It will take a while
 
 ## Explanation of scripts
