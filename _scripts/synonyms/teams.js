@@ -50,6 +50,7 @@ module.exports = {
             case 'BrawL eSports':
             case 'BrawL.NA':
             case 'Bring It On':
+            case 'Cloud9':
                 // Team has no alias or none found
                 return player;
             case '5Fox E-Sports Club':
@@ -75,6 +76,8 @@ module.exports = {
                 return 'MachiX';
             case 'Cloud9 Academy':
             case 'Cloud9 Challengers':
+            case 'Cloud9 Tempest':
+            case 'Cloud9 Eclipse':
                 return 'Cloud9 Challengers';
             default:
                 fs.writeFileSync(__dirname+'/../../data/elo_raw/teams/check/'+player+'.txt',"https://liquipedia.net/leagueoflegends/"+player);

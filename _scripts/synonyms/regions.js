@@ -10,8 +10,9 @@ module.exports = {
             case 'Apex Gaming':
             case '100 Thieves':
             case 'Dignitas':
-            case 'Team Solo Mid':
+            case 'TSM':
             case 'Counter Logic Gaming':
+            case 'Cloud9':
                 return 'LCS';
             case 'Big Gods Jackals':
             case '100 Thieves Academy':

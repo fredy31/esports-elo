@@ -349,12 +349,14 @@ function calcElo_champion(winner,winnerTeam,loser,loserTeam,gameTime){
     let winnerArray = [];
     let loserScore = 1000;
     let loserArray = [];
-    if (fs.existsSync(__dirname+'/../data/elo_raw/champion/'+winner.replace(':','-')+'.json')) {
+    winner = winner.replace(':','-');
+    loser = loser.replace(':','-');
+    if (fs.existsSync(__dirname+'/../data/elo_raw/champion/'+winner+'.json')) {
         let winnerFile = fs.readFileSync(__dirname+'/../data/elo_raw/champion/'+winner+'.json')
         winnerArray = JSON.parse(winnerFile);
         winnerScore = winnerArray[winnerArray.length-1].score;
     }
-    if (fs.existsSync(__dirname+'/../data/elo_raw/champion/'+loser.replace(':','-')+'.json')) {
+    if (fs.existsSync(__dirname+'/../data/elo_raw/champion/'+loser+'.json')) {
         let loserFile = fs.readFileSync(__dirname+'/../data/elo_raw/champion/'+loser+'.json')
         loserArray = JSON.parse(loserFile);
         loserScore = loserArray[loserArray.length-1].score;
@@ -366,10 +368,10 @@ function calcElo_champion(winner,winnerTeam,loser,loserTeam,gameTime){
         time:gameTime,
         score:winnerScore
     });
-    fs.writeFileSync(__dirname+'/../data/elo_raw/champion/'+winner.replace(':','-')+'.json',JSON.stringify(winnerArray));
+    fs.writeFileSync(__dirname+'/../data/elo_raw/champion/'+winner+'.json',JSON.stringify(winnerArray));
     loserArray.push({
         time:gameTime,
         score:loserScore
     });
-    fs.writeFileSync(__dirname+'/../data/elo_raw/champion/'+loser.replace(':','-')+'.json',JSON.stringify(loserArray));
+    fs.writeFileSync(__dirname+'/../data/elo_raw/champion/'+loser+'.json',JSON.stringify(loserArray));
 }
