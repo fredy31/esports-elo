@@ -91,7 +91,9 @@ module.exports = {
             case 'Rhea':
                 return 'About';
             default:
-                fs.writeFileSync(__dirname+'/../../data/elo_raw/players/check/'+player+'.txt',"https://lol.fandom.com/wiki/"+player);
+                if(!fs.existsSync(__dirname+'/../../data/elo_raw/players/check/'+player+'.txt')){
+                    fs.writeFileSync(__dirname+'/../../data/elo_raw/players/check/'+player+'.txt',"https://lol.fandom.com/wiki/"+player);
+                }
                 return player;
         }
     }
