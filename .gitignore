@@ -134,6 +134,7 @@ dist
 /data/elo_raw/players/*
 /data/elo_raw/players/check/*
 /data/elo_raw/regions/*
+/data/elo_raw/regions/check/*
 /data/elo_raw/rvb/*
 /data/elo_raw/teams/*
 /data/elo_raw/teams/check/*
