@@ -1,93 +1,115 @@
 const fs = require('node:fs');
 module.exports = {
     regions : function(player){
-        player = player.replace("\"",'').replace('|','-');
+        player = player.replace("\"",'').replace('|','-').replace("/",'-');
         switch(player){
             //Brazil
             case 'Falkol e-Sports':
+            case 'Big Gods' :
                 return 'Brazil';
+            // Latin America
+            case 'Bencheados':
+            case '6Sense':
+            case 'BrawL eSports':
+            case 'Bring It On':
+            case 'CASLA Esports':
+            case 'Cattleya Gaming':
+                return 'LAT';
+            case 'Born to Kill':
+                return 'LAS'
             //NA LCS
+            case 'Castle Berry':
             case 'Apex Gaming':
             case '100 Thieves':
             case 'Dignitas':
             case 'TSM':
             case 'Counter Logic Gaming':
             case 'Cloud9':
-                return 'LCS';
             case 'Big Gods Jackals':
             case '100 Thieves Academy':
             case 'Cloud9 Challengers':
-                return 'NA Challengers'
+            case 'affNity':
+            case 'Also Known As':
+            case 'Area of Effect eSports':
+            case 'Arsenal':
+            case 'Dream Team':
+            case 'Aware Gaming':
+            case 'BrawL.NA':
+            case 'Campus Party Sparks':
+            case 'Case Esports':
+                return 'NA'
             //LEC (EU)
             case 'Elements':
-                return 'LEC';
+            case '4everzenzyg':
+            case 'ASUS ROG Army':
+            case 'Cloud9 Eclipse':
+            case 'ASP Esports':
+            case 'AlienTech eSports':
+            case 'ALTERNATE aTTaX':
+            case 'Apex Pride':
+            case 'Awsomniac':
+            case '4Elements Esports':
+            case '4Elements Scuttle Squad':
+                return 'EU';
             //LCK (KR)
             case 'bbq Olivers':
-                return 'LCK';
+            case 'BPZ':
+                return 'KR';
             //LPL (CN)
             case 'Bilibili Gaming':
-                return 'LPL';
+            case 'Top Esports':
+            case '2144 Gaming':
+            case 'Chong Qing Gaming':
+                return 'CN';
             // OCE (Australia)
             case 'Bombers':
             case 'Avant Gaming':
+            case 'Infernum Gaming':
+            case 'Alpha Sydney':
                 return 'OCE';
             // LMS (Taiwan)
             case 'Ahq e-Sports Club':
             case 'MachiX':
+            case 'Assassin Sniper':
                 return 'LMS';
             // CIS (Russia)
             case 'Albus NoX Luna':
                 return 'CIS';
-            // Thailand
+            // SEA (Thailand, Singapore, etc)
             case 'Ascension Gaming':
-                return 'Thailand'
-            //LPLoL (Portugal)
-            case 'ASP Esports':
-                return 'LPLoL';
-            //LVP (Spain)
-            case 'ASUS ROG Army':
-                return 'LVP';
+            case 'Acclaim EmpireX':
+            case 'MEGA':
+                return 'SEA'
             //TCL (Turkey)
             case 'Beşiktaş Esports':
+            case 'ANT Gaming':
+            case 'ATLAS eSports Team':
+            case 'Beşiktaş.Oyun Hizmetleri':
+            case 'Big Plays Incorporated':
                 return 'TCL';
-            // Not in any of the main leagues or cannot be found
-            case '4everzenzyg':
             case '7th heaven':
             case '7th heaven X':
-            case '2144 Danmu Gaming':
-            case '2144 Gaming':
-            case 'Absolute':
-            case 'Acclaim EmpireX':
-            case 'affNity':
-            case 'AlienTech eSports':
-            case 'Alpha Sydney':
-            case 'Also Known As':
-            case 'ALTERNATE aTTaX':
-            case 'ANT Gaming':
-            case 'Apex Pride':
-            case 'Area of Effect eSports':
-            case 'Arsenal':
-            case 'Awsomniac':
-            case 'Assassin Sniper':
-            case 'Astral Authority':
-            case 'ATLAS eSports Team':
-            case 'Aware Gaming':
-            case 'Bangkok Titans':
-            case 'Bencheados':
-            case '6Sense':
-            case 'Beşiktaş.Oyun Hizmetleri':
-            case 'Big Gods' :
-            case 'Big Plays Incorporated':
-            case 'Born to Kill':
             case 'BowQen Blackbucks':
-            case 'BPZ':
-            case 'Brave e-Sports':
-            case 'BrawL eSports':
-            case 'BrawL.NA':
-            case 'Bring It On':
+                return 'JP';
+            //EMEA
+            case '3BL Esports':
+                return 'EMEA';
+            // Not in any of the main leagues or cannot be found
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
                 return 'Other';
             default:
-                fs.writeFileSync(__dirname+'/../../data/elo_raw/regions/check/'+player+'.txt',"https://liquipedia.net/leagueoflegends/"+player);
+                fs.writeFileSync(__dirname+'/../../data/elo_raw/regions/check/'+player+'.txt',"https://lol.fandom.com/wiki/"+player);
                 return 'Other';
         }
     }

@@ -7,7 +7,7 @@ const synonyms_regions = require('./synonyms/regions.js');
 
 cleanup_elo_players();
 function cleanup_elo_players(){
-    console.log('Cleanup of the ELOs')
+    console.log('Cleanup of the ELOs players')
     let directory = __dirname+'/../data/elo_raw/players';
     fs.readdir(directory, (err, files) => {
         if (err) throw err;
@@ -35,7 +35,7 @@ function cleanup_elo_players(){
 }
 
 function cleanup_elo_players_checks(){
-    console.log('Cleanup of the ELOs checks')
+    console.log('Cleanup of the ELOs players checks')
     let directory = __dirname+'/../data/elo_raw/players/check';
     fs.readdir(directory, (err, files) => {
         if (err) throw err;
@@ -91,7 +91,7 @@ function cleanup_elo_champions(){
 }
 
 function cleanup_elo_teams(){
-    console.log('Cleanup of the ELOs teams')
+    console.log('Cleanup of the ELOs teams check')
     let directory = __dirname+'/../data/elo_raw/teams/check';
     fs.readdir(directory, (err, files) => {
         if (err) throw err;
@@ -119,7 +119,7 @@ function cleanup_elo_teams(){
 }
 
 function cleanup_elo_teams_checks(){
-    console.log('Cleanup of the ELOs team checks')
+    console.log('Cleanup of the ELOs team')
     let directory = __dirname+'/../data/elo_raw/teams';
     fs.readdir(directory, (err, files) => {
         if (err) throw err;
