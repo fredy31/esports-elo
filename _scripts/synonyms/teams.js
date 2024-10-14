@@ -3,127 +3,100 @@ module.exports = {
     teams : function(player){
         player = player.replace("\"",'').replace('|','-').replace("/",'-');
         switch(player){
-            case '4everzenzyg':
-            case '7th heaven':
-            case '7th heaven X':
-            case 'Acclaim EmpireX':
-            case 'affNity':
-            case 'Albus NoX Luna':
-            case 'AlienTech eSports':
-            case 'Alpha Sydney':
-            case 'Also Known As':
-            case 'ALTERNATE aTTaX':
-            case 'ANT Gaming':
-            case 'Apex Gaming':
-            case 'Apex Pride':
-            case 'Area of Effect eSports':
-            case 'Arsenal':
-            case 'Ascension Gaming':
-            case 'ASP Esports':
-            case 'Awsomniac':
-            case '100 Thieves':
-            case 'Team Solo Mid':
-            case 'Counter Logic Gaming':
-            case 'Assassin Sniper':
-            case 'ATLAS eSports Team':
-            case 'Avant Gaming':
-            case 'Aware Gaming':
-            
-            case 'Bencheados':
-            case '6Sense':
-            case 'ASUS ROG Army':
-            case 'Beşiktaş Esports':
-            case 'Beşiktaş.Oyun Hizmetleri':
-            case 'Big Gods Jackals':
-            case 'Big Gods':
-            case 'Big Plays Incorporated':
+            case 'EDward Esports':
+            case 'I May':
             case 'Bilibili Gaming':
-            case '100 Thieves Academy':
-            case 'Born to Kill':
-            case 'BowQen Blackbucks':
-            case 'BPZ':
-            case 'Brave e-Sports':
-            case 'BrawL eSports':
-            case 'BrawL.NA':
-            case 'Bring It On':
-            case 'Cloud9':
-            case 'Cloud9 Eclipse':
-            case '3BL_Esports':
-            case '2144 Gaming':
-            case '4Elements Esports':
-            case '4Elements Scuttle Squad':
-            case 'CASLA Esports':
-            case 'Case Esports':
-            case 'Castle Berry':
-            case 'Cattleya Gaming':
-            case 'Call Gaming':
-            case 'Chiefs Esports Club':
-            case 'ÇİLEKLER':
-            case 'CLG Black':
-            case 'Authority E-sports':
-            case 'Abyss Academy':
-            case 'Athletico Esports':
-            case 'ahq Fighter':
-            case 'AKIHABARA ENCOUNT':
+                return 'Bilibili Gaming';
+            case 'RoX':
+            case 'The RED':
+                return 'RoX';
+            case 'Rascal Jester':
+            case 'FENNEL':
+                return 'FENNEL';
+            case 'Rampage':
+            case 'PENTAGRAM':
+                return 'PENTAGRAM';
+            case 'NRG':
+            case 'NRG Kia':
+                return 'NRG';
+            case 'Papara SuperMassive':
+            case 'SuperMassive Blaze':
+            case 'Blaze Esports':
+                return 'Papara SuperMassive';
+            case 'Hard Random':
+            case 'Good Team Multigaming':
+            case 'Albus NoX Luna':
+            case 'M19':
+                return 'M19';
+            case 'Cougar E-Sport':
+            case 'Mad Dragon':
+                return 'Mad Dragon';
+            case 'Qiao Gu Reapers':
+            case 'Newbee':
+                return 'Newbee';
+            case 'Mysterious Monkeys':
+            case 'Misfits Academy':
+            case 'Misfits Premier':
             case 'ad hoc gaming':
-            case 'Aftershock Esports':
-            case 'vVv Gaming White':
-            case 'y so E-Sports':
-            case 'Steve Bakes Cookies':
-            case 'Team Coast Gold':
-            case 'vVv Gaming':
-            case 'compLexity.Red':
-            case 'Team Green Forest':
-            case 'GG Call Nash':
-            case 'Playing Ducks':
-            case 'Wazabi Gaming':
-            case 'COGnitive Gaming':
-            case 'Denial eSports':
-            case 'XDG Gaming':
-            case 'Evil Geniuses':
-            case 'compLexity Gaming':
-            case 'NaJin White Shield':
-            case 'Fnatic':
-            case 'SK Gaming':
-            case 'Team ROCCAT':
-            case 'Ninjas in Pyjamas':
-            case 'Team LoLPro':
-            case 'Unicorns of Love':
-            case 'H2k-Gaming':
-            case 'SK Gaming Prime':
-            case 'Frank Fang Gaming':
-            case 'Zenith Esports':
-            case 'Dark Passage':
-            case 'EDward Gaming':
-            case 'KaBuM! Esports':
-            case 'Oh My God':
-            case 'Samsung White':
-            case 'compLexity.White':
-            case 'Enemy':
-            case 'Fission Esports':
-            case 'Infinity Esports':
-            case 'Noble Truth':
-            case 'Cyber Gaming':
-            case 'Different Dimension':
-            case 'Meloncats':
-            case 'Team Fusion':
-            case 'ThunderBot SPARTA':
-            case 'Tricked Esport':
-            case 'DarlingYou':
-            case 'Jin Air Green Wings':
-            case 'KT Rolster':
+                return 'ad hoc gaming';
+            case 'Giants':
+            case 'Giants Gaming':
+                return 'Giants Gaming';
+            case 'Vivo Keyd':
+            case 'Vivo Keyd Stars':
+                return 'Vivo Keyd Stars';
+            case 'Tatoo':
+            case 'Young Boss':
+                return 'Young Boss';
+            case 'Dexterity Team':
+            case 'Santos Dexterity':
+                return 'Dexterity Team';
+            case 'JAYOB e-Sports':
+            case 'Team awp':
+            case 'Operation Kino e-Sports':
+                return 'Operation Kino e-Sports';
+            case 'INTZ Red':
+            case 'RED Canids':
+                return 'RED Canids';
+            case 'Oyun Hizmetleri ÇİLEKLER':
+            case 'ÇİLEKLER':
+                return 'ÇİLEKLER';
+            case 'Team Immunity':
+            case 'Hellions e-Sports Club':
+                return 'Hellions e-Sports Club';
+            case 'Sin Gaming':
+            case 'MAMMOTH':
+                return 'MAMMOTH';
+            case 'Renegades':
+            case 'Team EnVyUs':
+                return 'Team EnVyUs';
+            case 'Fiction eSports':
+            case 'DatZit Gaming':
+                return 'DatZit Gaming';
+            case 'Prime Clan':
+            case 'SBENU Korea':
+                return 'SBENU Korea';
+            case 'Winners':
+            case 'Ever8 Winners':
+                return 'Winners';
+            case 'Rebels Anarchy':
+            case 'Kwangdong Freecs':
+            case 'Afreeca Freecs':
+                return 'Kwangdong Freecs';
+            case 'Crew e-Sports Club':
+            case 'YouthCrew Esports':
+                return 'YouthCrew Esports';
+            case 'TSM Darkness':
+            case 'Team Imagine':
+            case 'Odyssey Gaming':
+                return 'Team Imagine';
+            case 'Team Dignitas EU':
+            case 'Splyce':
+            case 'MAD Lions KOI':
+                return 'MAD Lions KOI';
             case 'Machi Crew':
-            case 'Midnight Sun Esports':
-            case 'LowLandLions.White':
-            case 'LowLandLions':
-            case 'LowLandLions.Black':
-            case 'NumberOne Esports':
-            case 'Storm':
-            case 'Team Frostbite':
-            case 'Team Turquality':
-            case 'ZONE eSports':
-                // Team has no alias or none found
-                return player;
+            case 'Dream or Reality':
+                return 'Dream or Reality';
             case 'Winterfox':
             case 'Evil Geniuses':
                 return 'Evil Geniuses';
@@ -288,7 +261,241 @@ module.exports = {
             case 'MEGA':
                 return 'MEGA';
             case 'Brave e-Sports':
+            case 'RMA_e-Sports':
                 return 'Brave e-Sports';
+            case 'MF Gaming':
+            case 'Wan Yoo':
+                return 'Wan Yoo';
+            case 'Newbee Young':
+            case 'QG Reapers':
+                return 'QG Reapers';
+            case 'Oh My God Academy':
+            case 'Oh My Dream':
+                return 'Oh My God Academy';
+            case 'Revenger':
+            case 'Kx.Happy':
+                return 'Revenger';
+            case 'Stardust':
+            case 'SeolHaeOne Prince':
+                return 'SeolHaeOne Prince';
+            case 'Team WE Future':
+            case 'Mighty Eagle':
+            case 'LinGan e-Sports':
+                return 'LinGan e-Sports';
+            case 'Unlimited Potential':
+            case 'D7G Esports Club':
+                return 'D7G Esports Club';
+            case 'Young Glory':
+            case 'Invictus Gaming Young':
+                return 'Invictus Gaming Young';
+            case 'WaY':
+            case 'GGOGI':
+                return 'WaY';
+            case 'Inspire eSports':
+            case 'Epsilon Esports':
+                return 'Epsilon Esports';
+            case 'Kaos Latin Gamers':
+            case 'Azules Esports':
+                return 'Kaos Latin Gamers';
+            case 'SCARZ':
+            case 'SCARZ Burning Core':
+            case 'Burning Core':
+            case 'Burning Core Toyama':
+                return 'Burning Core Toyama';
+            // No alias/namechange
+            case 'Kuala Lumpur Hunters':
+            case 'Kayana Gaming':
+            case 'Imperium Pro Team':
+            case 'Imperial Esports':
+            case 'Victorious Ace':
+            case 'Team Zan':
+            case 'Saikyo Makinyan':
+            case 'Nibble Gaming':
+            case 'The Chiefs Black':
+            case 'TEAM4NOT':
+            case 'Sentinels ESC':
+            case 'Rebirth eSports':
+            case 'Legion Gaming':
+            case 'Last Kings':
+            case 'Isurus':
+            case 'Hafnet eSports':
+            case 'Ember':
+            case 'Trident Esports':
+            case 'Furious Gaming':
+            case 'ZTR Gaming':
+            case 'Young Miracles':
+            case 'SQUARE':
+            case 'Pathos':
+            case 'MVP':
+            case 'Legend Dragon':
+            case '4everzenzyg':
+            case '7th heaven':
+            case '7th heaven X':
+            case 'Acclaim EmpireX':
+            case 'affNity':
+            
+            case 'AlienTech eSports':
+            case 'Alpha Sydney':
+            case 'Also Known As':
+            case 'ALTERNATE aTTaX':
+            case 'ANT Gaming':
+            case 'Apex Gaming':
+            case 'Apex Pride':
+            case 'Area of Effect eSports':
+            case 'Arsenal':
+            case 'Ascension Gaming':
+            case 'ASP Esports':
+            case 'Awsomniac':
+            case '100 Thieves':
+            case 'Team Solo Mid':
+            case 'Counter Logic Gaming':
+            case 'Assassin Sniper':
+            case 'ATLAS eSports Team':
+            case 'Avant Gaming':
+            case 'Aware Gaming':
+            
+            case 'Bencheados':
+            case '6Sense':
+            case 'ASUS ROG Army':
+            case 'Beşiktaş Esports':
+            case 'Beşiktaş.Oyun Hizmetleri':
+            case 'Big Gods Jackals':
+            case 'Big Gods':
+            case 'Big Plays Incorporated':
+            case '100 Thieves Academy':
+            case 'Born to Kill':
+            case 'BowQen Blackbucks':
+            case 'BPZ':
+            case 'Brave e-Sports':
+            case 'BrawL eSports':
+            case 'BrawL.NA':
+            case 'Bring It On':
+            case 'Cloud9':
+            case 'Cloud9 Eclipse':
+            case '3BL_Esports':
+            case '2144 Gaming':
+            case '4Elements Esports':
+            case '4Elements Scuttle Squad':
+            case 'CASLA Esports':
+            case 'Case Esports':
+            case 'Castle Berry':
+            case 'Cattleya Gaming':
+            case 'Call Gaming':
+            case 'Chiefs Esports Club':
+            case 'CLG Black':
+            case 'Authority E-sports':
+            case 'Abyss Academy':
+            case 'Athletico Esports':
+            case 'ahq Fighter':
+            case 'AKIHABARA ENCOUNT':
+            case 'Aftershock Esports':
+            case 'vVv Gaming White':
+            case 'y so E-Sports':
+            case 'Steve Bakes Cookies':
+            case 'Team Coast Gold':
+            case 'vVv Gaming':
+            case 'compLexity.Red':
+            case 'Team Green Forest':
+            case 'GG Call Nash':
+            case 'Playing Ducks':
+            case 'Wazabi Gaming':
+            case 'COGnitive Gaming':
+            case 'Denial eSports':
+            case 'XDG Gaming':
+            case 'Evil Geniuses':
+            case 'compLexity Gaming':
+            case 'NaJin White Shield':
+            case 'Fnatic':
+            case 'SK Gaming':
+            case 'Team ROCCAT':
+            case 'Ninjas in Pyjamas':
+            case 'Team LoLPro':
+            case 'Unicorns of Love':
+            case 'H2k-Gaming':
+            case 'SK Gaming Prime':
+            case 'Frank Fang Gaming':
+            case 'Zenith Esports':
+            case 'Dark Passage':
+            case 'EDward Gaming':
+            case 'KaBuM! Esports':
+            case 'Oh My God':
+            case 'Samsung White':
+            case 'compLexity.White':
+            case 'Enemy':
+            case 'Fission Esports':
+            case 'Infinity Esports':
+            case 'Noble Truth':
+            case 'Cyber Gaming':
+            case 'Different Dimension':
+            case 'Meloncats':
+            case 'Team Fusion':
+            case 'ThunderBot SPARTA':
+            case 'Tricked Esport':
+            case 'DarlingYou':
+            case 'Jin Air Green Wings':
+            case 'KT Rolster':
+            case 'Midnight Sun Esports':
+            case 'LowLandLions.White':
+            case 'LowLandLions':
+            case 'LowLandLions.Black':
+            case 'NumberOne Esports':
+            case 'Storm':
+            case 'Team Frostbite':
+            case 'Team Turquality':
+            case 'ZONE eSports':
+            case 'Millenium Spirit':
+            case 'Roar':
+            case 'Team Liquid Academy':
+            case 'Team Nevo':
+            case 'Team Refuse':
+            case 'Team ROCK':
+            case 'Never Give Up':
+            case 'Origen':
+            case 'Flash Wolves':
+            case 'Team WE':
+            case 'Copenhagen Wolves Academy':
+            case 'Machi Esports':
+            case 'Oyun Hizmetleri':
+            case 'Xenics':
+            case 'Ex Nihilo':
+            case 'Low Priority':
+            case 'Wortex Gaming':
+            case 'Sudden Fear':
+            case 'Dire Wolves':
+            case 'Legacy Esports':
+            case 'Team Overclockers UK':
+            case 'MeetYourMakers.TR':
+            case 'Team AURORA':
+            case 'Dark Wolves':
+            case 'Invictus Gaming':
+            case 'Legacy Genesis':
+            case 'LGD Gaming':
+            case 'paiN Gaming':
+            case 'CTU Pathos':
+            case 'INTZ':
+            case 'KaBuM! Black':
+            case 'CNB e-Sports Club':
+            case 'g3nerationX':
+            case 'E-corp Gaming':
+            case 'Huma':
+            case 'Illuminar Gaming':
+            case 'Wonder Stag e-Sports':
+            case 'Natus Vincere CIS':
+            case 'Team Vitality':
+            case 'Top Dog Gaming':
+            case 'Vaevictis eSports':
+            case 'XGamers':
+            case 'DetonatioN FocusMe':
+            case 'Echo Fox':
+            case 'Team BlackEye':
+            case 'Team Differential':
+            case 'Team Empire':
+            case 'Team Just':
+            case 'Unsold Stuff Gaming':
+            case 'Vega Squadron':
+            case 'IN Gaming':
+                // Team has no alias or none found
+                return player;
             default:
                 if(!fs.existsSync(__dirname+'/../../data/elo_raw/teams/check/'+player+'.txt')){
                     fs.writeFileSync(__dirname+'/../../data/elo_raw/teams/check/'+player+'.txt',"https://lol.fandom.com/wiki/"+player);

@@ -141,6 +141,7 @@ dist
 /data/elo_raw/champion/*
 /data/games/*
 /data/json/*
+/results/*
 !.gitignore
 !.gitkeep
 !*/

@@ -8,6 +8,15 @@ module.exports = {
             case 'Big Gods' :
             case 'Brave e-Sports':
             case 'KaBuM! Esports':
+            case 'paiN Gaming':
+            case 'RED Canids':
+            case 'INTZ':
+            case 'Operation Kino e-Sports':
+            case 'KaBuM! Black':
+            case 'Dexterity Team':
+            case 'CNB e-Sports Club':
+            case 'g3nerationX':
+            case 'Vivo Keyd Stars':
                 return 'Brazil';
             // Latin America
             case 'Bencheados':
@@ -17,10 +26,18 @@ module.exports = {
             case 'CASLA Esports':
             case 'Cattleya Gaming':
             case 'Authority E-sports':
+            case 'Furious Gaming':
+            case 'Kaos Latin Gamers':
+            case 'Hafnet eSports':
+            case 'Isurus':
+            case 'Last Kings':
+            case 'Rebirth eSports':
                 return 'LAT';
             case 'Born to Kill':
                 return 'LAS'
             //NA LCS
+            case 'NRG':
+            case 'Echo Fox':
             case 'Castle Berry':
             case 'Apex Gaming':
             case '100 Thieves':
@@ -74,8 +91,20 @@ module.exports = {
             case 'Storm':
             case 'Team Dragon Knights':
             case 'Team Frostbite':
+            case 'Team Liquid Academy':
+            case 'Team Imagine':
+            case 'DatZit Gaming':
+            case 'Team EnVyUs':
+            case 'Top Dog Gaming':
+            case 'Ember':
                 return 'NA'
             //LEC (EU)
+            case 'Legion Gaming':
+            case 'Epsilon Esports':
+            case 'Wortex Gaming':
+            case 'Low Priority':
+            case 'Team ROCK':
+            case 'Team Nevo':
             case 'Tricked Esport':
             case 'ThunderBot SPARTA':
             case 'Meloncats':
@@ -116,6 +145,17 @@ module.exports = {
             case 'LowLandLions.White':
             case 'LowLandLions':
             case 'LowLandLions.Black':
+            case 'Millenium Spirit':
+            case 'Origen':
+            case 'MAD Lions KOI':
+            case 'Copenhagen Wolves Academy':
+            case 'Ex Nihilo':
+            case 'Team Overclockers UK':
+            case 'Giants Gaming':
+            case 'E-corp Gaming':
+            case 'Huma':
+            case 'Illuminar Gaming':
+            case 'Team Vitality':
                 return 'EU';
             //LCK (KR)
             case 'bbq Olivers':
@@ -131,23 +171,61 @@ module.exports = {
             case 'Hanwha Life Esports':
             case 'Gen.G':
             case 'T1':
+            case 'Kwangdong Freecs':
+            case 'Winners':
+            case 'SBENU Korea':
+            case 'Xenics':
+            case 'Dark Wolves':
+            case 'CTU Pathos':
+            case 'Young Boss':
+            case 'MVP':
+            case 'Pathos':
+            case 'SQUARE':
+            case 'SeolHaeOne Prince':
+            case 'WaY':
                 return 'KR';
             //LPL (CN)
+            case 'Newbee':
             case 'Bilibili Gaming':
             case 'Top Esports':
             case '2144 Gaming':
             case 'Chong Qing Gaming':
             case 'EDward Gaming':
             case 'Oh My God':
+            case 'Royal Never Give Up':
+            case 'Roar':
+            case 'Team WE':
+            case 'Invictus Gaming':
+            case 'LGD Gaming':
+            case 'Legend Dragon':
+            case 'Wan Yoo':
+            case 'QG Reapers':
+            case 'Oh My God Academy':
+            case 'Revenger':
+            case 'LinGan e-Sports':
+            case 'D7G Esports Club':
+            case 'Invictus Gaming Young':
+            case 'Young Miracles':
+            case 'ZTR Gaming':
                 return 'CN';
             // OCE (Australia)
             case 'Bombers':
+            case 'Legacy Genesis':
             case 'Avant Gaming':
             case 'Infernum Gaming':
             case 'Alpha Sydney':
             case 'Chiefs Esports Club':
             case 'Abyss Academy':
             case 'Athletico Esports':
+            case 'Sudden Fear':
+            case 'Dire Wolves':
+            case 'Legacy Esports':
+            case 'MAMMOTH':
+            case 'Hellions e-Sports Club':
+            case 'Trident Esports':
+            case 'Sentinels ESC':
+            case 'TEAM4NOT':
+            case 'The Chiefs Black':
                 return 'OCE';
             // LMS (Taiwan)
             case 'Ahq e-Sports Club':
@@ -158,17 +236,31 @@ module.exports = {
             case 'J Team':
             case 'DarlingYou':
             case 'Hong Kong Attitude':
-            case 'Machi Crew':
+            case 'Dream or Reality':
             case 'Taipei Snipers':
             case 'Midnight Sun Esports':
+            case 'Logitech G Snipers':
+            case 'Never Give Up':
+            case 'Flash Wolves':
+            case 'Machi Esports':
+            case 'Mad Dragon':
+            case 'XGamers':
                 return 'LMS';
             // CIS (Russia)
-            case 'Albus NoX Luna':
+            case 'M19':
+            case 'Natus Vincere CIS':
+            case 'Vaevictis eSports':
+            case 'RoX':
+            case 'Team Differential':
+            case 'Team Empire':
+            case 'Team Just':
+            case 'Vega Squadron':
                 return 'CIS';
             // SEA (Thailand, Singapore, etc)
             case 'Ascension Gaming':
             case 'Acclaim EmpireX':
             case 'MEGA':
+            case 'Kuala Lumpur Hunters':
                 return 'SEA'
             //TCL (Turkey)
             case 'Beşiktaş Esports':
@@ -183,19 +275,37 @@ module.exports = {
             case 'NumberOne Esports':
             case 'Team Turquality':
             case 'ZONE eSports':
+            case 'YouthCrew Esports':
+            case 'Oyun Hizmetleri':
+            case 'MeetYourMakers.TR':
+            case 'Team AURORA':
+            case 'Victorious Ace':
+            case 'Imperial Esports':
+            case 'Imperium Pro Team':
                 return 'TCL';
             // Japan
             case '7th heaven':
             case '7th heaven X':
             case 'BowQen Blackbucks':
             case 'AKIHABARA ENCOUNT':
+            case 'DetonatioN FocusMe':
+            case 'PENTAGRAM':
+            case 'FENNEL':
+            case 'Team BlackEye':
+            case 'Unsold Stuff Gaming':
+            case 'Nibble Gaming':
+            case 'Saikyo Makinyan':
+            case 'Burning Core Toyama':
                 return 'JP';
             //EMEA
             case '3BL Esports':
             case 'AGO esports':
+            case 'Team Refuse':
+            case 'Wonder Stag e-Sports':
+            case 'Papara SuperMassive':
                 return 'EMEA';
             // Not in any of the main leagues or cannot be found
-            
+            case 'Kayana Gaming': //404
             
             
             
