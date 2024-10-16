@@ -17,6 +17,7 @@ module.exports = {
             case 'CNB e-Sports Club':
             case 'g3nerationX':
             case 'Vivo Keyd Stars':
+            case 'Overload':
                 return 'Brazil';
             // Latin America
             case 'Bencheados':
@@ -32,6 +33,7 @@ module.exports = {
             case 'Isurus':
             case 'Last Kings':
             case 'Rebirth eSports':
+            case 'Lyon Gaming':
                 return 'LAT';
             case 'Born to Kill':
                 return 'LAS'
@@ -97,8 +99,15 @@ module.exports = {
             case 'Team EnVyUs':
             case 'Top Dog Gaming':
             case 'Ember':
+            case 'Destined For Glory':
                 return 'NA'
             //LEC (EU)
+            case 'Szef+6':
+            case 'Misfits Gaming':
+            case 'Melty eSport Club':
+            case 'K1ck Black':
+            case 'G2 Vodafone':
+            case 'EURONICS Gaming':
             case 'Legion Gaming':
             case 'Epsilon Esports':
             case 'Wortex Gaming':
@@ -156,6 +165,7 @@ module.exports = {
             case 'Huma':
             case 'Illuminar Gaming':
             case 'Team Vitality':
+            case 'QLASH Forge':
                 return 'EU';
             //LCK (KR)
             case 'bbq Olivers':
@@ -185,6 +195,7 @@ module.exports = {
             case 'WaY':
                 return 'KR';
             //LPL (CN)
+            case 'IN Gaming':
             case 'Newbee':
             case 'Bilibili Gaming':
             case 'Top Esports':
@@ -207,6 +218,11 @@ module.exports = {
             case 'Invictus Gaming Young':
             case 'Young Miracles':
             case 'ZTR Gaming':
+            case 'Weibo Gaming':
+            case 'Tan Chi Sa Gaming':
+            case 'Team KungFu':
+            case 'WYDream':
+            case 'LNG Esports':
                 return 'CN';
             // OCE (Australia)
             case 'Bombers':
@@ -226,8 +242,10 @@ module.exports = {
             case 'Sentinels ESC':
             case 'TEAM4NOT':
             case 'The Chiefs Black':
+            case 'Tainted Minds':
                 return 'OCE';
             // LMS (Taiwan)
+            case 'G-Rex':
             case 'Ahq e-Sports Club':
             case 'MachiX':
             case 'Assassin Sniper':
@@ -245,6 +263,7 @@ module.exports = {
             case 'Machi Esports':
             case 'Mad Dragon':
             case 'XGamers':
+            case 'Flash Husky':
                 return 'LMS';
             // CIS (Russia)
             case 'M19':
@@ -255,12 +274,15 @@ module.exports = {
             case 'Team Empire':
             case 'Team Just':
             case 'Vega Squadron':
+            case 'Gambit Esports':
                 return 'CIS';
             // SEA (Thailand, Singapore, etc)
             case 'Ascension Gaming':
             case 'Acclaim EmpireX':
             case 'MEGA':
             case 'Kuala Lumpur Hunters':
+            case 'Saigon Jokers':
+            case 'Resurgence':
                 return 'SEA'
             //TCL (Turkey)
             case 'Beşiktaş Esports':
@@ -282,6 +304,7 @@ module.exports = {
             case 'Victorious Ace':
             case 'Imperial Esports':
             case 'Imperium Pro Team':
+            case '5 Ronin Academy':
                 return 'TCL';
             // Japan
             case '7th heaven':
@@ -296,6 +319,8 @@ module.exports = {
             case 'Nibble Gaming':
             case 'Saikyo Makinyan':
             case 'Burning Core Toyama':
+            case 'Smash It Down':
+            case 'Team Zan':
                 return 'JP';
             //EMEA
             case '3BL Esports':

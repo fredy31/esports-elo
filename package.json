@@ -4,7 +4,7 @@
   "description": "Get data from: https://drive.google.com/drive/u/1/folders/1gLSw0RLjBbtaNy0dgnGQDAZOHIgCe-HH",
   "main": "index.js",
   "scripts": {
-    "full_script": "npm run prepwork && npm run elo_players_teams",
+    "full_script": "npm run prepwork && npm run elo_players_teams && npm run create_export_file_players",
     "prepwork": "npm run convert_csv_to_json && npm run convert_json_to_games",
     "convert_csv_to_json": "node _scripts/converter/csv_to_json.js",
     "convert_json_to_games": "node _scripts/converter/json_to_games.js",

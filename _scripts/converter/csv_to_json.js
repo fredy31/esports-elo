@@ -1,6 +1,35 @@
+const path = require("path");
 const fs = require('node:fs');
 
-convert_csv_to_json();
+cleanup_game_json();
+function cleanup_game_json(){
+    console.log('Cleanup of the game jsons')
+    let directory = __dirname+'/../../data/json/';
+    fs.readdir(directory, (err, files) => {
+        if (err) throw err;
+    
+        for (const file of files) {
+            //console.log(file);
+            if(file != '.gitignore' && file != '.gitkeep'){
+                fs.unlink(path.join(directory, file), (err) => {
+                    if (err) throw err;
+                });
+            }
+        }
+    });
+    setTimeout(()=>{
+        fs.readdir(directory, (err, files) => {
+            if (err) throw err;
+            if(files.length <= 1){
+                console.log('Cleanup done! Starting calculations');
+                convert_csv_to_json();
+            }else{
+                console.log('Still '+files.length+' to delete! Please wait!');
+                cleanup_game_json();
+            }
+        })
+    },1000)
+}
 function convert_csv_to_json(){
     let directory = __dirname+'/../../data/csv/';
     fs.readdir(directory, (err, files) => {

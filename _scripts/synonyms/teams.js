@@ -265,6 +265,7 @@ module.exports = {
                 return 'Brave e-Sports';
             case 'MF Gaming':
             case 'Wan Yoo':
+            case 'WYDream':
                 return 'Wan Yoo';
             case 'Newbee Young':
             case 'QG Reapers':
@@ -302,7 +303,55 @@ module.exports = {
             case 'Burning Core':
             case 'Burning Core Toyama':
                 return 'Burning Core Toyama';
+            case 'Bursaspor Academy':
+            case '5 Ronin Academy':
+                return '5 Ronin Academy';
+            case 'Team Rigel':
+            case 'Corvus':
+            case 'Resurgence':
+                return 'Resurgence';
+            case 'Renegades: Banditos':
+            case 'Misfits Gaming':
+                return 'Misfits Gaming';
+            case 'Taipei Berserkers':
+            case 'Dream Catcher Gaming':
+            case 'Raise Gaming':
+            case 'G-Rex':
+                return 'G-Rex';
+            case 'Team Forge':
+            case 'QLASH Forge':
+            case 'QLASH':
+                return 'QLASH Forge';
+            case 'T.Bear Gaming':
+            case 'Suning':
+            case 'Weibo Gaming':
+                return 'Weibo Gaming';
+            case 'Tainted Minds':
+            case 'TM Gaming':
+            case 'Tectonic':
+                return 'Tainted Minds';
+            case 'Game Talents':
+            case 'Team WE Academy':
+                return 'Team WE Academy';
+            case 'Snake Esports':
+            case 'LNG Esports':
+                return 'LNG Esports';
             // No alias/namechange
+            case 'Destined For Glory':
+            case 'Team KungFu':
+            case 'Tan Chi Sa Gaming':
+            case 'Flash Husky':
+            case 'Szef+6':
+            case 'Melty eSport Club':
+            case 'K1ck Black':
+            case 'G2 Vodafone':
+            case 'EURONICS Gaming':
+            case 'Lyon Gaming':
+            case 'Gambit Esports':
+            case 'Overload':
+            case 'Saigon Jokers':
+            case 'Team Zan':
+            case 'IN Gaming':
             case 'Kuala Lumpur Hunters':
             case 'Kayana Gaming':
             case 'Imperium Pro Team':
