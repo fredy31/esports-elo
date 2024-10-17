@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 module.exports = {
     teams : function(player){
-        player = player.replace("\"",'').replace('|','-').replace("/",'-');
+        player = player.replace("\"",'').replace('|','-').replace("/",'-').replace(':','');
         switch(player){
             case 'EDward Esports':
             case 'I May':
@@ -67,6 +67,9 @@ module.exports = {
             case 'Sin Gaming':
             case 'MAMMOTH':
                 return 'MAMMOTH';
+            case 'Sin Academy':
+            case 'MAMMOTH Academy':
+                return 'MAMMOTH Academy';
             case 'Renegades':
             case 'Team EnVyUs':
                 return 'Team EnVyUs';
@@ -302,6 +305,7 @@ module.exports = {
             case 'SCARZ Burning Core':
             case 'Burning Core':
             case 'Burning Core Toyama':
+            case 'DetonatioN Rising':
                 return 'Burning Core Toyama';
             case 'Bursaspor Academy':
             case '5 Ronin Academy':
@@ -310,7 +314,7 @@ module.exports = {
             case 'Corvus':
             case 'Resurgence':
                 return 'Resurgence';
-            case 'Renegades: Banditos':
+            case 'Renegades Banditos':
             case 'Misfits Gaming':
                 return 'Misfits Gaming';
             case 'Taipei Berserkers':
@@ -336,7 +340,64 @@ module.exports = {
             case 'Snake Esports':
             case 'LNG Esports':
                 return 'LNG Esports';
+            case 'Saint Gaming':
+            case 'Hyper Youth Gaming':
+                return 'Saint Gaming';
+            case 'Rising Star Gaming':
+            case 'Rising SuperStar Gaming':
+            case 'GC Busan Rising Star':
+            case 'VSG':
+                return 'VSG';
+            case 'Vici Gaming':
+            case 'Rare Atom':
+                return 'Rare Atom';
+            case 'Virtuoso Gaming':
+            case 'Team GBK':
+                return 'Virtuoso Gaming';
+            case 'I Gaming Star':
+            case 'ES Sharks':
+            case 'Team Dynamics':
+            case 'Nongshim RedForce':
+                return 'Nongshim RedForce';
+            case 'Team Mist':
+            case 'Wayi Spider':
+            case 'Team Afro':
+                return 'Team Afro';
+            case 'Team Genesis':
+            case 'INTZ.Genesis':
+            case 'Team oNe eSports':
+                return 'Team oNe eSports';
+            case 'Team Orora':
+            case 'Galakticos':
+                return 'Galakticos';
+            case 'Vestigial':
+            case 'Team Flash':
+                return 'Team Flash';
+            case 'Predators Esports':
+            case 'XTEN Esports':
+                return 'XTEN Esports';
+            case 'Revenge eSports':
+            case 'Elite Wolves':
+                return 'Elite Wolves';
             // No alias/namechange
+            case 'Infamous Gaming':
+            case 'Dash9 Gaming':
+            case 'Darkness Eagles Esports':
+            case 'INFINITY':
+            case 'Team Cappadocia':
+            case 'SuperMassive TNG':
+            case 'Vaevictis Syndicate':
+            case 'Team Just Alpha':
+            case 'Los Grandes':
+            case 'e-Champ Gaming':
+            case 'RPG-KINGDOM':
+            case 'Overdrive':
+            case 'Cyclone':
+            case 'Team Exile5':
+            case 'Reload Esports':
+            case 'Nuovo Gaming':
+            case 'Nova eSports':
+            case 'FC Schalke 04 Esports':
             case 'Destined For Glory':
             case 'Team KungFu':
             case 'Tan Chi Sa Gaming':

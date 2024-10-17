@@ -18,8 +18,11 @@ module.exports = {
             case 'g3nerationX':
             case 'Vivo Keyd Stars':
             case 'Overload':
+            case 'e-Champ Gaming':
+            case 'Team oNe eSports':
+            case 'Los Grandes':
                 return 'Brazil';
-            // Latin America
+            // Latin America (LAT/LAN)
             case 'Bencheados':
             case '6Sense':
             case 'BrawL eSports':
@@ -34,9 +37,14 @@ module.exports = {
             case 'Last Kings':
             case 'Rebirth eSports':
             case 'Lyon Gaming':
-                return 'LAT';
+            case 'INFINITY':
+            case 'XTEN Esports':
             case 'Born to Kill':
-                return 'LAS'
+            case 'Elite Wolves':
+            case 'Darkness Eagles Esports':
+            case 'Dash9 Gaming':
+            case 'Infamous Gaming':
+                return 'LAT';
             //NA LCS
             case 'NRG':
             case 'Echo Fox':
@@ -100,6 +108,7 @@ module.exports = {
             case 'Top Dog Gaming':
             case 'Ember':
             case 'Destined For Glory':
+            case 'Nova eSports':
                 return 'NA'
             //LEC (EU)
             case 'Szef+6':
@@ -166,6 +175,7 @@ module.exports = {
             case 'Illuminar Gaming':
             case 'Team Vitality':
             case 'QLASH Forge':
+            case 'FC Schalke 04 Esports':
                 return 'EU';
             //LCK (KR)
             case 'bbq Olivers':
@@ -193,8 +203,12 @@ module.exports = {
             case 'SQUARE':
             case 'SeolHaeOne Prince':
             case 'WaY':
+            case 'VSG':
+            case 'Virtuoso Gaming':
+            case 'Nongshim RedForce':
                 return 'KR';
             //LPL (CN)
+            case 'Rare Atom':
             case 'IN Gaming':
             case 'Newbee':
             case 'Bilibili Gaming':
@@ -223,6 +237,8 @@ module.exports = {
             case 'Team KungFu':
             case 'WYDream':
             case 'LNG Esports':
+            case 'Team WE Academy':
+            case 'Saint Gaming':
                 return 'CN';
             // OCE (Australia)
             case 'Bombers':
@@ -243,8 +259,13 @@ module.exports = {
             case 'TEAM4NOT':
             case 'The Chiefs Black':
             case 'Tainted Minds':
+            case 'Nuovo Gaming':
+            case 'MAMMOTH Academy':
+            case 'Team Exile5':
+            case 'Cyclone':
                 return 'OCE';
             // LMS (Taiwan)
+            case 'Team Afro':
             case 'G-Rex':
             case 'Ahq e-Sports Club':
             case 'MachiX':
@@ -275,6 +296,8 @@ module.exports = {
             case 'Team Just':
             case 'Vega Squadron':
             case 'Gambit Esports':
+            case 'Team Just Alpha':
+            case 'Vaevictis Syndicate':
                 return 'CIS';
             // SEA (Thailand, Singapore, etc)
             case 'Ascension Gaming':
@@ -283,6 +306,7 @@ module.exports = {
             case 'Kuala Lumpur Hunters':
             case 'Saigon Jokers':
             case 'Resurgence':
+            case 'Team Flash':
                 return 'SEA'
             //TCL (Turkey)
             case 'Beşiktaş Esports':
@@ -305,6 +329,9 @@ module.exports = {
             case 'Imperial Esports':
             case 'Imperium Pro Team':
             case '5 Ronin Academy':
+            case 'SuperMassive TNG':
+            case 'Team Cappadocia':
+            case 'Galakticos':
                 return 'TCL';
             // Japan
             case '7th heaven':
@@ -321,6 +348,8 @@ module.exports = {
             case 'Burning Core Toyama':
             case 'Smash It Down':
             case 'Team Zan':
+            case 'Overdrive':
+            case 'RPG-KINGDOM':
                 return 'JP';
             //EMEA
             case '3BL Esports':
@@ -331,6 +360,7 @@ module.exports = {
                 return 'EMEA';
             // Not in any of the main leagues or cannot be found
             case 'Kayana Gaming': //404
+            case 'Reload Esports': //404
             
             
             
