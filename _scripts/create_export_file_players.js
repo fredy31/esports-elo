@@ -3,8 +3,8 @@ const exportdates = require('./list_of_exported_dates.js');
 const convertJsonToCsv = require('./converter/json_to_csv.js')
 
 create_export_file('regions')
-//create_export_file('players')
-//create_export_file('teams')
+create_export_file('players')
+create_export_file('teams')
 create_export_file('champion')
 function create_export_file(of){
     var datesOfExport = exportdates.dates();
@@ -38,5 +38,21 @@ function create_export_file(of){
         }
         fs.writeFileSync(__dirname+'/../results/'+of+'.json',JSON.stringify(exportArray));
         fs.writeFileSync(__dirname+'/../results/'+of+'.csv',convertJsonToCsv.jsonToCsv(exportArray));
+        if(of=='champion' || of=='players' || of=='teams'){
+            let topbot = [
+                exportArray[0],
+                exportArray[1],
+                exportArray[2],
+                exportArray[3],
+                exportArray[4],
+                exportArray[exportArray.length-5],
+                exportArray[exportArray.length-4],
+                exportArray[exportArray.length-3],
+                exportArray[exportArray.length-2],
+                exportArray[exportArray.length-1],
+            ];
+            fs.writeFileSync(__dirname+'/../results/'+of+'-topbot.json',JSON.stringify(topbot));
+            fs.writeFileSync(__dirname+'/../results/'+of+'-topbot.csv',convertJsonToCsv.jsonToCsv(topbot));
+        }
     })
 }

@@ -379,7 +379,137 @@ module.exports = {
             case 'Revenge eSports':
             case 'Elite Wolves':
                 return 'Elite Wolves';
+            case 'NonHK':
+            case 'Hong Kong Attitude Mage':
+                return 'Hong Kong Attitude Mage';
+            case 'Team BattleComics':
+            case 'Liiv SANDBOX':
+            case 'BNK FearX':
+                return 'BNK FearX';
+            case 'ProGaming Esports':
+            case 'Prodigy Esports':
+            case 'Vorax Liberty':
+                return 'Vorax Liberty';
+            case 'T Show':
+            case 'Redemption eSports Porto Alegre':
+                return 'Redemption eSports Porto Alegre';
+            case 'Team Just Challenger':
+            case 'Team Just Ice':
+                return 'Team Just Ice';
+            case 'Crest Gaming Act':
+            case 'AXIZ CREST':
+            case 'AXIZ':
+                return 'AXIZ CREST';
+            case 'Fortius':
+            case 'EVOS Esports':
+                return 'EVOS Esports';
+            case 'Liyab Esports':
+            case 'Mineski':
+                return 'Mineski';
+            case 'MiraGe Gaming':
+            case 'Dplus KIA':
+            case 'DWG KIA':
+            case 'DAMWON Gaming':
+                return 'Dplus KIA';
+            case 'Ilha da Macacada Gaming':
+            case 'Uppercut esports':
+            case 'FURIA':
+                return 'FURIA';
+            case 'CLG Academy':
+            case 'CLG Challengers':
+                return 'CLG Academy';
+            case 'Team Fighter':
+            case 'EDG Youth Team':
+            case 'Team Hurricane':
+                return 'EDG Youth Team';
+            case 'Royal Bandits':
+            case 'Royal Youth':
+            case 'NASR eSports Turkey':
+                return 'NASR eSports Turkey';
+            case 'Young Generation':
+            case 'Phong Vũ Buffalo':
+            case 'Saigon Buffalo':
+            case 'Vikings Esports':
+                return 'Vikings Esports';
+            case 'Rogue Warriors':
+            case "Anyone's Legend":
+                return "Anyone's Legend";
+            case 'TyLoo':
+            case 'Gama Dream':
+                return 'TyLoo';
+            case 'Clutch Gaming Academy':
+            case 'Dignitas Academy':
+            case 'Dignitas Challengers':
+                return 'Dignitas Challengers';
+            case 'FlyQuest Academy':
+            case 'FlyQuest NZXT':
+                return 'FlyQuest NZXT';
+            case 'Golden Guardians Academy':
+            case 'Golden Guardians Challengers':
+                return 'Golden Guardians Challengers';
             // No alias/namechange
+            case 'FTV Esports':
+            case 'Echo Fox Academy':
+            case 'People\'s Red Wolf Gaming':
+            case 'FunPlus Phoenix':
+            case 'HOU GAMING':
+            case 'Team Cloud Drake':
+            case 'Team Infernal Drake':
+            case 'Team Mountain Drake':
+            case 'Team Ocean Drake':
+            case 'Tricksters':
+            case 'Team Manila Eagles':
+            case 'Headhunters':
+            case 'V3 Esports':
+            case 'Feint Gaming':
+            case 'Lynx':
+            case 'Moss Seven Club':
+            case 'NRG Challengers':
+            case 'JD Gaming':
+            case 'Wind and Rain':
+            case 'Reign':
+            case 'Red Bulls':
+            case 'MNM Gaming':
+            case 'KIYF eSports Club':
+            case 'Joy Dream':
+            case 'RGA':
+            case 'Team Yetti':
+            case 'GAM Esports':
+            case 'Merciless Gaming':
+            case 'Legatum':
+            case 'P3P eSports':
+            case 'Tainted Minds Blue':
+            case 'Fireball':
+            case 'Elements Pro Gaming':
+            case 'CrowCrowd':
+            case 'Paris Saint-Germain eSports':
+            case 'Team Regicide':
+            case 'Outlaws':
+            case 'Virtus.pro':
+            case 'Dolphins':
+            case 'Tempo Storm':
+            case 'Team Gates':
+            case 'Iron Hawks e-Sports':
+            case 'Gold Coin United':
+            case 'eUnited':
+            case 'Keep Gaming':
+            case 'IDM Pirata':
+            case 'Galatasaray Esports':
+            case 'Fenerbahçe Esports':
+            case 'Griffin':
+            case 'ZAGA Talent Gaming':
+            case 'Now or Never':
+            case 'Just Toys Havoks':
+            case 'Gaming Gaming':
+            case 'Gama E-Sport Dream (伽马电子竞技)':
+            case 'DS Gaming':
+            case 'LDLC OL':
+            case 'devils.one':
+            case 'University of Toronto':
+            case 'Delta Fox':
+            case 'WingsOflibeRty':
+            case 'Silver Crows':
+            case 'Satori':
             case 'Infamous Gaming':
             case 'Dash9 Gaming':
             case 'Darkness Eagles Esports':
