@@ -447,7 +447,55 @@ module.exports = {
             case 'Golden Guardians Academy':
             case 'Golden Guardians Challengers':
                 return 'Golden Guardians Challengers';
+            case 'Hall of Fame':
+            case 'Cube Adonis':
+            case 'CERBERUS Esports':
+                return 'CERBERUS Esports';
+            case 'Lotus Esports':
+            case 'Hyper Nova':
+            case 'Super Nova Sentinels':
+                return 'Super Nova Sentinels';
+            case 'Guangdong Flying Tigers':
+            case 'Nigel\'s Last Tiles':
+                return 'Guangdong Flying Tigers';
+            case 'PepeTinkyWinky':
+            case 'PepePo':
+                return 'PepeTinkyWinky';
             // No alias/namechange
+            case 'Team GMask':
+            case 'Pulse Star':
+            case 'Nightblood Gaming':
+            case 'Next Level Esports':
+            case 'Black Rock Esports':
+            case 'Dragoon\'s Goons':
+            case 'WANG TOWN':
+            case 'Lotus':
+            case 'grompcord':
+            case 'DUCKIE GETTERS':
+            case 'Contingent Esports':
+            case 'Lotus Knights':
+            case 'Team Insidious':
+            case 'Actions Per Minute':
+            case 'The Gulls Esports':
+            case 'DELTALAND':
+            case 'GMBLERS Esports':
+            case 'L’art de la Guerre':
+            case 'ReluminateGG':
+            case 'Pee N W\'s':
+            case 'Maelstrom Esports':
+            
+            case 'Lynch Esports':
+            case 'NONAME':
+            case 'Spinebusters E-Sport':
+            case 'Rich Gang':
+            case 'Twareg Esports':
+            case 'Juicy Ballers':
+            case 'Fog Esports':
+            case 'Baam Esports':
+            case 'Ukrainian Glory Team':
+            case 'Packmiko E-Sports':
+            case 'FlameHard':
+            case '24-7 Tower Dive':
             case 'FTV Esports':
             case 'Echo Fox Academy':
             case 'People\'s Red Wolf Gaming':

@@ -36,6 +36,19 @@ function create_export_file(of){
                 console.log((i/files.length*100).toFixed(3)+'% ('+i+'/'+files.length+') '+of+' scanned.');
             }
         }
+        let lastKey = Object.keys(exportArray)[Object.keys(exportArray).length - 1]
+        exportArray.sort((a,b)=>{
+            let aval = '';
+            let bval = '';
+            for (const [key, value] of Object.entries(a)) {
+                aval=value;
+            }
+            for (const [key, value] of Object.entries(b)) {
+                bval=value;
+            }
+            return bval-aval;
+        });
+
         fs.writeFileSync(__dirname+'/../results/'+of+'.json',JSON.stringify(exportArray));
         fs.writeFileSync(__dirname+'/../results/'+of+'.csv',convertJsonToCsv.jsonToCsv(exportArray));
         if(of=='champion' || of=='players' || of=='teams'){

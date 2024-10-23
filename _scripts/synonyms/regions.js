@@ -60,6 +60,12 @@ module.exports = {
             case 'Feint Gaming':
                 return 'LAT';
             //NA LCS
+            case 'PepeTinkyWinky':
+            case 'L’art de la Guerre':
+            case 'ReluminateGG':
+            case 'Pee N W\'s':
+            case 'Maelstrom Esports':
+            case 'Guangdong Flying Tigers':
             case 'NRG Challengers':
             case 'CLG Academy':
             case 'Tempo Storm':
@@ -139,6 +145,18 @@ module.exports = {
             case 'Echo Fox Academy':
             case 'FlyQuest NZXT':
             case 'Golden Guardians Challengers':
+            case 'Contingent Esports':
+            case 'DUCKIE GETTERS':
+            case 'grompcord':
+            case 'Lotus':
+            case 'Super Nova Sentinels':
+            case 'WANG TOWN':
+            case 'Dragoon\'s Goons':
+            case 'Black Rock Esports':
+            case 'Next Level Esports':
+            case 'Nightblood Gaming':
+            case 'Pulse Star':
+            case 'Team GMask':
                 return 'NA'
             //LEC (EU)
             case '3BL Esports':
@@ -219,6 +237,24 @@ module.exports = {
             case 'Red Bulls':
             case 'Reign':
             case 'Wind and Rain':
+            case '24-7 Tower Dive':
+            case 'FlameHard':
+            case 'Packmiko E-Sports':
+            case 'Ukrainian Glory Team':
+            case 'Baam Esports':
+            case 'Fog Esports':
+            case 'Juicy Ballers':
+            case 'Twareg Esports':
+            case 'Spinebusters E-Sport':
+            case 'Comanchero Gaming':
+            case 'NONAME':
+            case 'Lynch Esports':
+            case 'GMBLERS Esports':
+            case 'DELTALAND':
+            case 'The Gulls Esports':
+            case 'Actions Per Minute':
+            case 'Team Insidious':
+            case 'Lotus Knights':
                 return 'EU';
             //LCK (KR)
             case 'HOU GAMING':
@@ -300,6 +336,7 @@ module.exports = {
             case 'Now or Never':
                 return 'CN';
             // OCE (Australia)
+            case 'Rich Gang':
             case 'Team Regicide':
             case 'Outlaws':
             case 'Bombers':
@@ -326,6 +363,7 @@ module.exports = {
             case 'Cyclone':
             case 'Tainted Minds Blue':
             case 'Lynx':
+            case 'Reload Esports':
                 return 'OCE';
             // CIS (Russia)
             case 'Elements Pro Gaming':
@@ -347,6 +385,7 @@ module.exports = {
             case 'Tricksters':
                 return 'CIS';
             // SEA (Thailand, Singapore, etc)
+            case 'CERBERUS Esports':
             case 'FTV Esports':
             case 'GAM Esports':
             case 'Team Yetti':
@@ -385,6 +424,7 @@ module.exports = {
             case 'Headhunters':
             case 'Team Manila Eagles':
             case 'Vikings Esports':
+            case 'Kayana Gaming':
                 return 'SEA'
             //TCL (Turkey)
             case 'P3P eSports':
@@ -436,8 +476,9 @@ module.exports = {
             case 'V3 Esports':
                 return 'JP';
             // Not in any of the main leagues or cannot be found
-            case 'Kayana Gaming': //404
-            case 'Reload Esports': //404
+             //404
+             //404
+             //404
             
             
             
