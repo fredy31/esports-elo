@@ -139,6 +139,8 @@ dist
 /data/elo_raw/teams/*
 /data/elo_raw/teams/check/*
 /data/elo_raw/champion/*
+/data/elo_raw/teams_league/*
+/data/elo_raw/teams_league/check/*
 /data/games/*
 /data/json/*
 /results/*

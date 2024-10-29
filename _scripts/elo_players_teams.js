@@ -4,8 +4,67 @@ const calcElo = require('./calculator/_elo_calc.js');
 const synonyms_players = require('./synonyms/players.js');
 const synonyms_teams = require('./synonyms/teams.js');
 const synonyms_regions = require('./synonyms/regions.js');
+const synonyms_leagues = require('./synonyms/leagues.js');
 
-cleanup_elo_players();
+cleanup_elo_team_leagues();
+function cleanup_elo_team_leagues(){
+    console.log('Cleanup of the Team Leagues')
+    let directory = __dirname+'/../data/elo_raw/teams_league';
+    fs.readdir(directory, (err, files) => {
+        if (err) throw err;
+        //console.log(files);
+        for (const file of files) {
+            //console.log(file);
+            if(file != '.gitignore' && file != '.gitkeep' && file != 'check'){
+                fs.unlink(path.join(directory, file), (err) => {
+                    if (err) throw err;
+                });
+            }
+        }
+    });
+    setTimeout(()=>{
+        fs.readdir(directory, (err, files) => {
+            if (err) throw err;
+            if(files.length <= 2){
+                cleanup_elo_team_leagues_checks();
+            }else{
+                console.log('Still '+files.length+' to delete! Please wait!');
+                cleanup_elo_team_leagues();
+            }
+        })
+    },1000)
+}
+
+//cleanup_elo_team_leagues_checks();
+function cleanup_elo_team_leagues_checks(){
+    console.log('Cleanup of the Team Leagues Checks')
+    let directory = __dirname+'/../data/elo_raw/teams_league/check';
+    fs.readdir(directory, (err, files) => {
+        if (err) throw err;
+        //console.log(files);
+        for (const file of files) {
+            //console.log(file);
+            if(file != '.gitignore' && file != '.gitkeep' && file != 'check'){
+                fs.unlink(path.join(directory, file), (err) => {
+                    if (err) throw err;
+                });
+            }
+        }
+    });
+    setTimeout(()=>{
+        fs.readdir(directory, (err, files) => {
+            if (err) throw err;
+            if(files.length <= 2){
+                cleanup_elo_players();
+            }else{
+                console.log('Still '+files.length+' to delete! Please wait!');
+                cleanup_elo_team_leagues_checks();
+            }
+        })
+    },1000)
+}
+
+//cleanup_elo_players();
 function cleanup_elo_players(){
     console.log('Cleanup of the ELOs players')
     let directory = __dirname+'/../data/elo_raw/players';
@@ -225,7 +284,7 @@ function elo_players(){
                     calcElo_champion(game.Blue.bot.champion,game.Blue.team,game.Red.bot.champion,game.Red.team,game.Date);
                     calcElo_champion(game.Blue.sup.champion,game.Blue.team,game.Red.sup.champion,game.Red.team,game.Date);
                     calcElo_teams(game.Blue.team,game.Red.team,game.Date);
-                    calcElo_regions(game.Blue.team,game.Red.team,game.Date);
+                    calcElo_regions(game.Blue.team,game.Red.team,game.Date,game.League);
                 }else{
                     calcElo_player(game.Red.top.playername,game.Red.team,game.Blue.top.playername,game.Blue.team,game.Date);
                     calcElo_player(game.Red.jng.playername,game.Red.team,game.Blue.jng.playername,game.Blue.team,game.Date);
@@ -238,7 +297,7 @@ function elo_players(){
                     calcElo_champion(game.Red.bot.champion,game.Red.team,game.Blue.bot.champion,game.Blue.team,game.Date);
                     calcElo_champion(game.Red.sup.champion,game.Red.team,game.Blue.sup.champion,game.Blue.team,game.Date);
                     calcElo_teams(game.Red.team,game.Blue.team,game.Date);
-                    calcElo_regions(game.Red.team,game.Blue.team,game.Date);
+                    calcElo_regions(game.Red.team,game.Blue.team,game.Date,game.League);
                 }
                 console.log((i/files.length*100).toFixed(3)+'% ('+i+'/'+files.length+') games scanned.');
             }
@@ -310,13 +369,13 @@ function calcElo_teams(winner,loser,gameTime){
     fs.writeFileSync(__dirname+'/../data/elo_raw/teams/'+loser+'.json',JSON.stringify(loserArray));
 }
 
-function calcElo_regions(winner,loser,gameTime){
+function calcElo_regions(winner,loser,gameTime,league='none'){
     let winnerScore = 1000;
     let winnerArray = [];
     let loserScore = 1000;
     let loserArray = [];
-    winner = synonyms_regions.regions(synonyms_teams.teams(winner));
-    loser = synonyms_regions.regions(synonyms_teams.teams(loser));
+    winner = synonyms_leagues.teams(synonyms_teams.teams(winner),league);
+    loser = synonyms_leagues.teams(synonyms_teams.teams(loser),league);
     if(winner != loser && winner != 'Other' && loser != 'Other'){
         if (fs.existsSync(__dirname+'/../data/elo_raw/regions/'+winner+'.json')) {
             let winnerFile = fs.readFileSync(__dirname+'/../data/elo_raw/regions/'+winner+'.json')

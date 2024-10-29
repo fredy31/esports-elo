@@ -1,7 +1,38 @@
 const fs = require('node:fs');
-convert_json_to_games();
+const path = require("path");
+//convert_json_to_games();
+cleanup_games();
+function cleanup_games(){
+    console.log('Cleanup of the games')
+    let directory = __dirname+'/../../data/games';
+    fs.readdir(directory, (err, files) => {
+        if (err) throw err;
+    
+        for (const file of files) {
+            //console.log(file);
+            if(file != '.gitignore' && file != '.gitkeep' && file != 'check'){
+                fs.unlink(path.join(directory, file), (err) => {
+                    if (err) throw err;
+                });
+            }
+        }
+    });
+    setTimeout(()=>{
+        fs.readdir(directory, (err, files) => {
+            if (err) throw err;
+            if(files.length <= 1){
+                convert_json_to_games();
+            }else{
+                console.log('Still '+files.length+' to delete! Please wait!');
+                cleanup_games();
+            }
+        })
+    },1000)
+}
+
 function convert_json_to_games(){
     let directory = __dirname+'/../../data/json/';
+    
     fs.readdir(directory, (err, files) => {
         if (err) throw err;
         var file_i = 0;
@@ -19,6 +50,7 @@ function convert_json_to_games(){
                         //console.log(gamesOfFile[el.gameid]);
                         gamesOfFile[el.gameid] = {
                             'Id' : el.gameid,
+                            'League': el.league,
                             'Date' : el.date,
                             'Blue' : {
                                 'team' : '',
