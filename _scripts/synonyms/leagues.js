@@ -2,13 +2,20 @@ const fs = require('node:fs');
 module.exports = {
     teams : function(team,league){
         if(fs.existsSync(__dirname+'/../../data/elo_raw/teams_league/'+team+'.txt')){
+            //console.log('Read');
             return fs.readFileSync(__dirname+'/../../data/elo_raw/teams_league/'+team+'.txt')
         }else{
             let region = figureOutRegion(team,league);
-            if(region){
+            if(region && region != '_International' && region != "_Miss"){
+                //console.log('Checked');
                 if(!fs.existsSync(__dirname+'/../../data/elo_raw/teams_league/'+team+'.txt')){
                     fs.writeFileSync(__dirname+'/../../data/elo_raw/teams_league/'+team+'.txt',region);
                 }
+                return region;
+            }else{
+                //console.log('WTF '+team+' - '+league+' - '+region);
+                fs.writeFileSync(__dirname+'/../../data/elo_raw/teams_league/check/_'+league+'_'+team+'.txt', team+' - '+league+' - '+region)
+                return '_Bug';
             }
         }
     }
@@ -57,6 +64,7 @@ function figureOutRegion(team,league){
         case 'LHE':
         case 'LMF':
         case 'DDH':
+        case 'SL (LATAM)':
             return 'Latin America';
         case 'PCS':
         case 'VCS':
@@ -132,6 +140,7 @@ function figureOutRegion(team,league){
         case 'NERD':
         case 'PGC':
         case 'EL':
+        case 'NASG':
             return 'American Minor Tournament'
         case 'MSI':
         case 'EM':
@@ -140,13 +149,12 @@ function figureOutRegion(team,league){
         case 'WLDs':
         case 'IEM':
         case 'IWCI':
-        case 'NASG':
-            return '';
+            return '_International';
         default:
             if(!fs.existsSync(__dirname+'/../../data/elo_raw/teams_league/check/'+league+'.txt')){
                 fs.writeFileSync(__dirname+'/../../data/elo_raw/teams_league/check/'+league+'.txt',team);
             }
-            return '';
+            return '_Miss';
             //workPlayer = league;
     }
 }

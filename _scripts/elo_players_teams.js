@@ -6,7 +6,7 @@ const synonyms_teams = require('./synonyms/teams.js');
 const synonyms_regions = require('./synonyms/regions.js');
 const synonyms_leagues = require('./synonyms/leagues.js');
 
-cleanup_elo_team_leagues();
+/*cleanup_elo_team_leagues();
 function cleanup_elo_team_leagues(){
     console.log('Cleanup of the Team Leagues')
     let directory = __dirname+'/../data/elo_raw/teams_league';
@@ -34,8 +34,8 @@ function cleanup_elo_team_leagues(){
         })
     },1000)
 }
-
-//cleanup_elo_team_leagues_checks();
+*/
+cleanup_elo_team_leagues_checks();
 function cleanup_elo_team_leagues_checks(){
     console.log('Cleanup of the Team Leagues Checks')
     let directory = __dirname+'/../data/elo_raw/teams_league/check';
@@ -64,7 +64,7 @@ function cleanup_elo_team_leagues_checks(){
     },1000)
 }
 
-//cleanup_elo_players();
+cleanup_elo_players();
 function cleanup_elo_players(){
     console.log('Cleanup of the ELOs players')
     let directory = __dirname+'/../data/elo_raw/players';
@@ -376,7 +376,10 @@ function calcElo_regions(winner,loser,gameTime,league='none'){
     let loserArray = [];
     winner = synonyms_leagues.teams(synonyms_teams.teams(winner),league);
     loser = synonyms_leagues.teams(synonyms_teams.teams(loser),league);
-    if(winner != loser && winner != 'Other' && loser != 'Other'){
+    if(winner == 'undefined' || !winner){console.log(baseWinner + ' - ' + league);}
+    if(loser == 'undefined' || !loser){console.log(baseLoser + ' - ' + league);}
+    // IDK why if I didnt force them to string it would try to calculate even if both are from the same region (like NA vs NA)
+    if(winner.toString() != loser.toString() && winner.toString() != '_Bug' && loser.toString() != '_Bug'){
         if (fs.existsSync(__dirname+'/../data/elo_raw/regions/'+winner+'.json')) {
             let winnerFile = fs.readFileSync(__dirname+'/../data/elo_raw/regions/'+winner+'.json')
             winnerArray = JSON.parse(winnerFile);
@@ -388,8 +391,12 @@ function calcElo_regions(winner,loser,gameTime,league='none'){
             loserScore = loserArray[loserArray.length-1].score;
         }
         let mod = calcElo.calcElo(winnerScore,loserScore);
+        //console.log(mod);
         winnerScore+=mod;
         loserScore-=mod;
+        /*if(winnerScore<1){
+            console.log(mod + '\n' + winner + ' ' + baseWinner + ' ' + winnerScore + '\n' + loser + ' ' + baseLoser + ' ' + loserScore );
+        }*/
         winnerArray.push({
             time:gameTime,
             score:winnerScore
